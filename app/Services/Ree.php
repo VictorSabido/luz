@@ -32,6 +32,4 @@ class Ree
             'date' => $date,
         ])->json();
     }
-
-
 }
