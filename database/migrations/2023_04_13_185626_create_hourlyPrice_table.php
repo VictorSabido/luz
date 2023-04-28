@@ -16,8 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger('day_id');
             $table->string('hour');
             $table->string('time_slot');
-            $table->string('pcb');
-            $table->string('cym')->nullable();
+            $table->float('pcb', 3, 2);
+            $table->float('cym', 3, 2)->nullable();
             $table->timestamps();
 
             $table->unique(['day_id', 'hour']);
