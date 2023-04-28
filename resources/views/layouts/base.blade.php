@@ -37,6 +37,8 @@
     </div>
 
     @include('layouts.sections.scripts')
+
+    @stack('custom-scripts')
 </body>
 
 </html>
